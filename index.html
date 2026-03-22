@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>A Secret for You</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Inter:wght@300;400;500;600&family=Allura&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- LOGIN -->
+  <section id="loginScreen" class="login-screen">
+    <div class="login-card">
+      <div class="login-heart-wrap">
+        <div class="login-heart">❤</div>
+      </div>
+
+      <h1 class="login-title">A Secret for You</h1>
+      <p class="login-subtitle">Enter the special time...</p>
+
+      <div class="input-wrap">
+        <span class="input-icon">🔒</span>
+        <input type="password" id="passwordInput" placeholder="Our forever word..." />
+      </div>
+
+      <button class="unlock-btn" id="unlockBtn">Unlock My Heart</button>
+      <p id="loginError" class="login-error"></p>
+
+      <p class="made-with-love">Made with love, just for you ♡</p>
+    </div>
+  </section>
+
+  <!-- MAIN WEBSITE -->
+  <main id="siteContent" class="hidden">
+
+    <!-- HERO -->
+    <section class="hero">
+      <div class="hero-overlay"></div>
+      <div class="floating-particles" id="particles"></div>
+
+      <div class="hero-content">
+        <h1 class="hero-script">
+          In a world full of everything... I still choose you.
+        </h1>
+        <p class="hero-subtext">
+          You turned ordinary moments into something I never want to forget.
+        </p>
+
+        <div class="hero-arrow">↓</div>
+
+        <a href="#letterSection" class="glow-button">Read My Heart</a>
+      </div>
+    </section>
+
+    <!-- TIMELINE -->
+    <section class="section timeline-section">
+      <h2 class="section-title">Our Journey Together</h2>
+
+      <div class="timeline">
+        <div class="timeline-line"></div>
+
+        <div class="timeline-row left">
+          <div class="timeline-card">
+            <h3>The First Time I Saw You</h3>
+            <span class="timeline-date">12th feb 2026</span>
+            <p>Time stopped. Everything else faded. It was just you. I just knew i needed u as my partner for the dance we had, did everything i had to just to be with u. </p>
+          </div>
+          <div class="timeline-dot">❤</div>
+        </div>
+
+        <div class="timeline-row right">
+          <div class="timeline-dot">❤</div>
+          <div class="timeline-card">
+            <h3>When I Knew It Was You</h3>
+            <span class="timeline-date">`15th feb 2026</span>
+            <p>Not a grand moment. Just a quiet certainty that felt like coming home. the peace I got when i was dancing with u . the love u had in your eyes was enough for me.</p>
+          </div>
+        </div>
+
+        <div class="timeline-row left">
+          <div class="timeline-card">
+            <h3>Our First Adventure</h3>
+            <span class="timeline-date">21st feb 2026</span>
+            <p>We got lost, laughed too much, and I realized I never wanted to stop spending time with you. but that time ur father called and we had to run. what a great scene right! </p>
+          </div>
+          <div class="timeline-dot">❤</div>
+        </div>
+
+        <div class="timeline-row right">
+          <div class="timeline-dot">❤</div>
+          <div class="timeline-card">
+            <h3>The Day Everything Changed for me</h3>
+            <span class="timeline-date"> 26 feb 2026</span>
+            <p>You held my hand and i had my fist ever kiss</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- COUNTER -->
+    <section class="section">
+      <div class="counter-panel">
+        <p class="script-accent" id="dynamicGreeting">Good afternoon, my love</p>
+        <h2 class="section-title counter-title">Time Since We Found Each Other</h2>
+
+        <div class="counter-grid">
+          <div class="counter-box">
+            <span id="days">000</span>
+            <small>Days</small>
+          </div>
+          <div class="counter-box">
+            <span id="hours">00</span>
+            <small>Hours</small>
+          </div>
+          <div class="counter-box">
+            <span id="minutes">00</span>
+            <small>Minutes</small>
+          </div>
+          <div class="counter-box">
+            <span id="seconds">00</span>
+            <small>Seconds</small>
+          </div>
+        </div>
+
+        <p class="counter-footer">And counting... every moment with you is a gift</p>
+      </div>
+    </section>
+
+    <!-- LETTER -->
+    <section class="section" id="letterSection">
+      <h2 class="section-title">A Letter From My Heart</h2>
+
+      <div class="letter-paper">
+        <h3 class="letter-heading">To the one I love...</h3>
+        <div id="typewriterText" class="letter-body"></div>
+        <p class="letter-sign">Forever yours sweetheart ♡</p>
+      </div>
+    </section>
+
+    <!-- MEMORIES -->
+    <section class="section">
+      <h2 class="section-title">Moments We'll Never Forget</h2>
+
+      <div class="polaroid-grid">
+        <div class="memory-item tilt-left">
+          <div class="polaroid">
+            <img src="images/memory1.jpeg" alt="Memory 1">
+          </div>
+          <p>Dancing below main building </p>
+        </div>
+
+        <div class="memory-item tilt-right">
+          <div class="polaroid">
+            <img src="images/memory2.jpeg" alt="Memory 2">
+          </div>
+          <p>Our favorite spot below G building</p>
+        </div>
+
+        <div class="memory-item tilt-left">
+          <div class="polaroid">
+            <img src="images/memory3.jpeg" alt="Memory 3">
+          </div>
+          <p>mornings together with friends</p>
+        </div>
+
+        <div class="memory-item tilt-right">
+          <div class="polaroid">
+            <img src="images/memory4.jpeg" alt="Memory 4">
+          </div>
+          <p>Best Day we had and everyone had little role</p>
+        </div>
+
+        <div class="memory-item tilt-left">
+          <div class="polaroid">
+            <img src="images/memory5.jpeg" alt="Memory 5">
+          </div>
+          <p>Cafe talks and fun</p>
+        </div>
+
+        <div class="memory-item tilt-right">
+          <div class="polaroid">
+            <img src="images/memory6.jpeg" alt="Memory 6">
+          </div>
+          <p>Every little laugh</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- REASONS -->
+    <section class="section">
+      <h2 class="section-title">Why I Love You</h2>
+
+      <div class="reasons-grid">
+        <div class="reason-card hidden-reason" data-reason="The way you understand me without words">
+          <span class="heart-big">❤</span>
+          <small>Click to reveal</small>
+        </div>
+        <div class="reason-card hidden-reason" data-reason="How you make normal days feel special">
+          <span class="heart-big">❤</span>
+          <small>Click to reveal</small>
+        </div>
+        <div class="reason-card hidden-reason" data-reason="Your laugh that makes everything better">
+          <span class="heart-big">❤</span>
+          <small>Click to reveal</small>
+        </div>
+        <div class="reason-card hidden-reason" data-reason="The way you see the best in me">
+          <span class="heart-big">❤</span>
+          <small>Click to reveal</small>
+        </div>
+        <div class="reason-card hidden-reason" data-reason="How you make me want to be better">
+          <span class="heart-big">❤</span>
+          <small>Click to reveal</small>
+        </div>
+        <div class="reason-card hidden-reason" data-reason="Your kindness that touches everyone">
+          <span class="heart-big">❤</span>
+          <small>Click to reveal</small>
+        </div>
+        <div class="reason-card hidden-reason" data-reason="The comfort I feel in your presence">
+          <span class="heart-big">❤</span>
+          <small>Click to reveal</small>
+        </div>
+        <div class="reason-card hidden-reason" data-reason="How you believe in my dreams">
+          <span class="heart-big">❤</span>
+          <small>Click to reveal</small>
+        </div>
+        <div class="reason-card hidden-reason" data-reason="The way you hold my hand">
+          <span class="heart-big">❤</span>
+          <small>Click to reveal</small>
+        </div>
+        <div class="reason-card hidden-reason" data-reason="Simply because you're you">
+          <span class="heart-big">❤</span>
+          <small>Click to reveal</small>
+        </div>
+      </div>
+    </section>
+
+    <!-- FINAL -->
+    <section class="final-section">
+      <div class="final-overlay"></div>
+      <div class="final-content">
+        <div class="final-heart">❤</div>
+        <h2 class="final-script">
+          No matter where life takes us... you are my home.
+        </h2>
+        <button id="restartBtn" class="glow-button">Experience Again</button>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FLOATING MUSIC -->
+  <button class="music-fab" id="musicToggle" aria-label="Toggle music">
+    ▶
+  </button>
+
+  <audio id="bgMusic" loop>
+    <source src="music/song.mp3" type="audio/mpeg">
+  </audio>
+
+  <script src="script.js"></script>
+</body>
+</html>
